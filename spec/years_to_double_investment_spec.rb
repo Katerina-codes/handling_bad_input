@@ -1,6 +1,3 @@
-#display question to user
-#get rate of return from user
-
 require 'years_to_double_investment'
 
 describe Display do
