@@ -31,9 +31,7 @@ describe Display do
 	end
 
 	it "returns 72 if rate == 1" do
-		input = StringIO.new("1")
-		output = StringIO.new
-		display = Display.new(output, input)
-		expect(display.years_until_investment_returned(input)).to eq(72)
+		display = Display.new
+		expect(display.years_until_investment_returned(1)).to eq(72)
 	end
 end
