@@ -1,4 +1,4 @@
-require 'years_to_double_investment'
+require 'display'
 
 describe Display do
 
@@ -9,6 +9,11 @@ describe Display do
 		expect(output.string).to eq("What is the rate of return?\n")
 	end
 
-
+	it "gets rate of return from the user" do
+		input = StringIO.new("blah")
+		output = StringIO.new
+		display = Display.new(output, input)
+		expect(display.get_rate_of_return).to eq("blah")
+	end
 
 end
