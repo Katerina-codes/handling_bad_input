@@ -39,4 +39,9 @@ describe Display do
 		display = Display.new
 		expect(display.years_until_investment_returned(2)).to eq(36)
 	end
+
+	it "returns 24 if rate == 3" do
+		display = Display.new
+		expect(display.years_until_investment_returned(3)).to eq(24)
+	end
 end

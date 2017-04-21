@@ -21,8 +21,10 @@ class Display
 	def years_until_investment_returned(rate)
 		if rate == 1
 			72
-		else
+		elsif rate == 2
 			36
+		else
+			24
 		end
 	end
 
