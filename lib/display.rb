@@ -11,6 +11,10 @@ class Display
 
 	def get_rate_of_return
 		rate = @input.gets
-		"#{rate}"
+		if rate == "0"
+			"Please enter an appropriate number"
+		else
+			"#{rate}"
+		end
 	end
 end

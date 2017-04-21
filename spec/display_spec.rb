@@ -16,4 +16,11 @@ describe Display do
 		expect(display.get_rate_of_return).to eq("blah")
 	end
 
+	it "returns 'Please enter an appropriate number'" do
+		input = StringIO.new("0")
+		output = StringIO.new
+		display = Display.new(output, input)
+		expect(display.get_rate_of_return).to eq("Please enter an appropriate number")
+	end
+
 end
