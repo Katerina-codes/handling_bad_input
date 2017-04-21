@@ -1,4 +1,4 @@
-This is a program which Handles Bad Input whilst calculating how long it will take for someone's investment to be doubled.
+This is a program which handles bad input whilst calculating how long it will take for someone's investment to be doubled.
 
 The program should:
 - Display a question that asks what the rate of return is to the user
