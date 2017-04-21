@@ -17,4 +17,9 @@ class Display
 			"#{rate}"
 		end
 	end
+
+	def years_until_investment_returned(input)
+		72
+	end
+
 end
