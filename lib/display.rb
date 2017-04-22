@@ -23,6 +23,7 @@ class Display
 	end
 
 	def display_years_until_investment_returned
+		display_rate_question
 		rate = get_rate_of_return
 		years = years_until_investment_returned(rate)
 		"It will take " + years.to_s + " years to double your initial investment."
