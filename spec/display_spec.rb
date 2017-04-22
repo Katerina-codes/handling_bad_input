@@ -44,4 +44,10 @@ describe Display do
 		display = Display.new
 		expect(display.years_until_investment_returned(3)).to eq(24)
 	end
+
+	it "displays years until investment is returned" do
+		input = StringIO.new("1")
+		display = Display.new(StringIO.new, input)
+		expect(display.display_years_until_investment_returned).to eq("It will take 72 years to double your initial investment.")
+	end
 end

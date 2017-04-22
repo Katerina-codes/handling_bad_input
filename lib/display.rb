@@ -14,12 +14,18 @@ class Display
 		if rate.to_i < 1
 			"Please enter a number greater than 0"
 		else
-			"#{rate}"
+			rate.to_i
 		end
 	end
 
 	def years_until_investment_returned(rate)
 		72 / rate
+	end
+
+	def display_years_until_investment_returned
+		rate = get_rate_of_return
+		years = years_until_investment_returned(rate)
+		"It will take " + years.to_s + " years to double your initial investment."
 	end
 
 end
