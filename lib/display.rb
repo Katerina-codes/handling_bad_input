@@ -1,3 +1,5 @@
+require_relative 'calculator'
+
 class Display
 
 	def initialize(output = $stdout, input = $stdin)
@@ -18,14 +20,10 @@ class Display
 		end
 	end
 
-	def years_until_investment_returned(rate)
-		72 / rate
-	end
-
 	def display_years_until_investment_returned
 		display_rate_question
 		rate = get_rate_of_return
-		years = years_until_investment_returned(rate)
+		years = Calculator.new.years_until_investment_returned(rate)
 		puts display_years = "It will take " + years.to_s + " years to double your initial investment."
 		display_years
 	end

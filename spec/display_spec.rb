@@ -30,21 +30,6 @@ describe Display do
 		expect(display.get_rate_of_return).to eq("Please enter a number greater than 0")
 	end
 
-	it "returns 72 if rate == 1" do
-		display = Display.new
-		expect(display.years_until_investment_returned(1)).to eq(72)
-	end
-
-	it "returns 36 if rate == 2" do
-		display = Display.new
-		expect(display.years_until_investment_returned(2)).to eq(36)
-	end
-
-	it "returns 24 if rate == 3" do
-		display = Display.new
-		expect(display.years_until_investment_returned(3)).to eq(24)
-	end
-
 	it "displays years until investment is returned" do
 		input = StringIO.new("1")
 		display = Display.new(StringIO.new, input)
