@@ -25,13 +25,14 @@ describe Display do
 		expect(output.string).to eq("Please enter a number greater than 0\n")
 	end
 
-	# it "returns 'Please enter a number greater than 0'" do
-	# 	input = StringIO.new("!")
-	# 	output = StringIO.new
-	# 	display = Display.new(output, input)
-	# 	expect(display.get_rate_of_return).to eq("Please enter a number greater than 0")
-	# end
-	#
+	it "returns 'Please enter a number greater than 0'" do
+		input = StringIO.new("!\n1")
+		output = StringIO.new
+		display = Display.new(output, input)
+	  display.get_rate_of_return
+		expect(output.string).to eq("Please enter a number greater than 0\n")
+	end
+
 	# it "displays years until investment is returned" do
 	# 	input = StringIO.new("1")
 	# 	display = Display.new(StringIO.new, input)
