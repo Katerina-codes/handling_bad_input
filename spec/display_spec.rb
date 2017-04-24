@@ -33,9 +33,4 @@ describe Display do
 		expect(output.string).to eq("Please enter a number greater than 0\n")
 	end
 
-	# it "displays years until investment is returned" do
-	# 	input = StringIO.new("1")
-	# 	display = Display.new(StringIO.new, input)
-	# 	expect(display.display_years_until_investment_returned).to eq("It will take 72 years to double your initial investment.")
-	# end
 end
