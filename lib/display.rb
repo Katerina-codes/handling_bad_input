@@ -12,12 +12,12 @@ class Display
 	end
 
 	def get_rate_of_return
-		rate = @input.gets
-		if rate.to_i < 1
-			"Please enter a number greater than 0"
-		else
-			rate.to_i
+	rate = @input.gets.to_i
+		until rate > 0
+			@output.puts "Please enter a number greater than 0"
+			rate = @input.gets.to_i
 		end
+	  rate
 	end
 
 	def display_years_until_investment_returned
