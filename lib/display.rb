@@ -2,7 +2,7 @@ require_relative 'calculator'
 
 class Display
 
-	def initialize(output = $stdout, input = $stdin)
+  def initialize(output = $stdout, input = $stdin)
 		@output = output
 		@input = input
 	end
